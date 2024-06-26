@@ -24,7 +24,7 @@ To view the website, simply visit [stalitsa.com](https://stalitsa.com).
 ## Contact
 Feel free to reach out to me via the following platforms:
 
-- **Email**: [support@stalitsa.com](mailto:support@stalitsa.com)
+- **Email**: [contact@stalitsa.com](mailto:contact@stalitsa.com)
 - **GitHub**: [github.com/stalitsa](https://github.com/stalitsa)
 - **Twitter**: [https://x.com/Stalitsa3221](https://x.com/Stalitsa3221)
 - **Discord**: [https://discord.gg/AqyVEtNmwJ](https://discord.gg/AqyVEtNmwJ)
