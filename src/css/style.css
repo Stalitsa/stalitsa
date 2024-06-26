@@ -1,0 +1,179 @@
+ /* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin-bottom: 2rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Header */
+header {
+    background-color: #3498db;
+    background: rgba(0, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 999; /* Ensure navigation is on top */
+    box-shadow: 0 0 30px rgba(50, 100, 220, 0.7);
+}
+
+nav a {
+    color: cyan;
+    padding: 1rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: yellow; /* Change background-color on hover */
+    background: rgba(0, 255, 255, 0.6);
+    color: rgba(0, 255, 10, 0.6);; /* Change text color on hover */
+    box-shadow: 0 0 20px rgba(50, 100, 220, 7.7);
+}
+
+nav a.active {
+    background-color: yellow; /* Change background-color on hover */
+    background: rgba(0, 255, 255, 0.3);
+    color: rgba(0, 255, 10, 0.3); /* Change text color on hover */
+    box-shadow: 0 0 20px rgba(50, 100, 220, 7.7);
+}
+
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: white;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(50, 100, 220, 7.7);
+}
+
+section h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgba(250, 250, 100, 0.7);
+}
+
+section ul {
+    margin-bottom: 1rem;
+    color: black;
+}
+
+section h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgba(0, 100, 220, 8.7);
+    text-align: center;
+    box-shadow: 0 0 20px rgba(50, 100, 220, 0.7);
+}
+
+section p {
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container > div {
+    flex: 0 0 calc(50% - 0rem);
+    padding: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: cyan;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .container > div {
+        flex: 0 0 100%;
+    }
+    main {
+        padding-top: 1rem;
+        position: center
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+#content {
+    padding: 2rem;
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Back to Top Button Styles */
+#back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    left: 50%; /* Center horizontally */
+    z-index: 100; /* Place it above other content */
+    background-color: #007bff; /* Blue background */
+    padding: 8px 10px; /* Padding */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    background-color: yellow; /* Change background-color on hover */
+    background: rgba(0, 255, 255, 0.3);
+    color: rgba(0, 255, 10, 0.3); /* Change text color on hover */
+    box-shadow: 0 0 20px rgba(50, 100, 220, 7.7);
+}
+
+#back-to-top:hover {
+    background-color: yellow; /* Change background-color on hover */
+    background: rgba(0, 255, 255, 0.6);
+    color: rgba(0, 255, 10, 0.6);; /* Change text color on hover */
+    box-shadow: 0 0 20px rgba(50, 100, 220, 7.7);
+}
+
+
