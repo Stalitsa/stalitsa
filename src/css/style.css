@@ -21,6 +21,7 @@ body {
 
 /* Header */
 header {
+
     background-color: #3498db;
     background: rgba(0, 255, 255, 0.3);
     color: white;
@@ -46,6 +47,7 @@ nav a {
 }
 
 nav a:hover {
+    filter: blur(0.5px);
     background-color: yellow; /* Change background-color on hover */
     background: rgba(0, 255, 255, 0.6);
     color: rgba(0, 255, 10, 0.6);; /* Change text color on hover */
@@ -80,6 +82,7 @@ section ul {
 }
 
 section h2 {
+    filter: blur(0.5px);
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: rgba(0, 100, 220, 8.7);
@@ -166,14 +169,15 @@ footer {
     background-color: yellow; /* Change background-color on hover */
     background: rgba(0, 255, 255, 0.3);
     color: rgba(0, 255, 10, 0.3); /* Change text color on hover */
-    box-shadow: 0 0 20px rgba(50, 100, 220, 7.7);
+    box-shadow: 0 0 20px rgba(50, 100, 220, 1.7);
 }
 
 #back-to-top:hover {
+    filter: blur(0.9px);
     background-color: yellow; /* Change background-color on hover */
     background: rgba(0, 255, 255, 0.6);
     color: rgba(0, 255, 10, 0.6);; /* Change text color on hover */
-    box-shadow: 0 0 20px rgba(50, 100, 220, 7.7);
+    box-shadow: 0 0 20px rgba(50, 100, 220, 1.7);
 }
 
 

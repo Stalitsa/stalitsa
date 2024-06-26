@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function adjustButtonPosition() {
         var footerHeight = footer.offsetHeight;
         var windowHeight = window.innerHeight;
-        var buttonBottom = footerHeight + 5; // Adjust 20px above the footer
+        var buttonBottom = footerHeight + 2; // Adjust 2px above the footer
         backToTopButton.style.bottom = buttonBottom + "px";
     }
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             backToTopButton.style.display = "block";
         } else {
             backToTopButton.style.display = "none";

@@ -1,16 +1,38 @@
-## Hi there 👋
+# Stalitsa's Personal Website
+Welcome to my personal website! This site serves as a comprehensive portfolio showcasing my skills,
+projects, and interests. As a passionate coder and DIY enthusiast,
+I created this site to share my work and connect with like-minded individuals.
 
-<!--
-**Stalitsa/stalitsa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## About the Website
+This website provides information about my professional background, skills, projects, and contact information.
+It is designed to be a reflection of my journey in coding and DIY, featuring various sections such as:
 
-Here are some ideas to get you started:
+- **About Me**: An introduction to who I am and what I do.
+- **Skills**: A list of my technical skills and areas of expertise.
+- **Portfolio**: A showcase of my coding projects and DIY creations.
+- **Projects**: Details about some of the projects I've worked on.
+- **Contact**: Information on how to get in touch with me.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Technologies Used
+- **HTML**: For structuring the content of the website.
+- **CSS**: For styling the website and making it visually appealing.
+- **JavaScript**: For adding interactive elements and functionality.
+
+## Getting Started
+To view the website, simply visit [stalitsa.com](https://stalitsa.com).
+
+## Contact
+Feel free to reach out to me via the following platforms:
+
+- **Email**: [support@stalitsa.com](mailto:support@stalitsa.com)
+- **GitHub**: [github.com/stalitsa](https://github.com/stalitsa)
+- **Twitter**: [https://x.com/Stalitsa3221](https://x.com/Stalitsa3221)
+- **Discord**: [https://discord.gg/AqyVEtNmwJ](https://discord.gg/AqyVEtNmwJ)
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Thank you for visiting my personal website. I hope you find it informative and inspiring!
+
