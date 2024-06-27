@@ -1,44 +1,48 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('nav a');
     const content = document.getElementById('content');
-    var backToTopButton = document.getElementById("back-to-top");
-    var footer = document.querySelector("footer");
+    const backToTopButton = document.getElementById("back-to-top");
+    const footer = document.querySelector("footer");
 
     function adjustButtonPosition() {
-        var footerHeight = footer.offsetHeight;
-        var windowHeight = window.innerHeight;
-        var buttonBottom = footerHeight + 2; // Adjust 2px above the footer
+        const footerHeight = footer.offsetHeight;
+        const buttonBottom = footerHeight + 2;
         backToTopButton.style.bottom = buttonBottom + "px";
     }
 
-    // Adjust button position on scroll and resize
-    window.onscroll = function() {
-        scrollFunction();
-        adjustButtonPosition();
-    };
-
-    window.onresize = function() {
-        adjustButtonPosition();
-    };
-
     function scrollFunction() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            backToTopButton.style.display = "block";
-        } else {
-            backToTopButton.style.display = "none";
-        }
+        const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+        backToTopButton.style.display = scrollTop > 200 ? "block" : "none";
     }
 
-    // Initial call to set the position
+    // Debounce function to limit the rate at which a function can fire
+    function debounce(func, wait) {
+        let timeout;
+        return function() {
+            const context = this, args = arguments;
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(context, args), wait);
+        };
+    }
+
+    // Adjust button position on scroll and resize with debouncing
+    const handleScrollResize = debounce(() => {
+        scrollFunction();
+        adjustButtonPosition();
+    }, 100);
+
+    window.addEventListener('scroll', handleScrollResize);
+    window.addEventListener('resize', handleScrollResize);
+
+    // Initial call to set the position and scroll function
     adjustButtonPosition();
+    scrollFunction();
 
     // When the user clicks on the button, scroll to the top of the document
     backToTopButton.onclick = function() {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
     };
-
 
     links.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -61,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const newContent = tempDiv.querySelector('#content').innerHTML;
 
                     // Apply slide out animation
-                    content.style.animation = 'slideOut 0.5s forwards';
+                    content.style.animation = 'slideOut 0.4s forwards';
 
                     // Wait for the slide out animation to complete
                     setTimeout(() => {
@@ -69,8 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         content.innerHTML = newContent;
 
                         // Apply slide in animation
-                        content.style.animation = 'slideIn 0.5s forwards';
-                    }, 50);
+                        content.style.animation = 'slideIn 0.4s forwards';
+                    }, 400); // Ensure the timeout matches the animation duration
                 });
         });
     });

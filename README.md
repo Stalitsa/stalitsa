@@ -29,6 +29,15 @@ Feel free to reach out to me via the following platforms:
 - **Twitter**: [https://x.com/Stalitsa3221](https://x.com/Stalitsa3221)
 - **Discord**: [https://discord.gg/AqyVEtNmwJ](https://discord.gg/AqyVEtNmwJ)
 
+## Credits
+### Third-Party Libraries
+This project uses the following third-party libraries:
+
+- **[FontAwesome](https://fontawesome.com/)**: Icons used in this project are provided by FontAwesome.
+- FontAwesome is a popular icon toolkit used in many web projects.
+- You can find more information and the complete set of icons on their [website](https://fontawesome.com/).
+
+
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
